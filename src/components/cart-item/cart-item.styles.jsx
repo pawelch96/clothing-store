@@ -6,3 +6,24 @@ export const CartItemContainer = styled.div`
   height: 80px;
   margin-bottom: 15px;
 `;
+
+export const ItemDetailsContainer = styled.div`
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10px 20px;
+`;
+
+export const CartItemName = styled.span`
+  font-size: 16px;
+`;
+
+export const CartItemPrice = styled.span`
+  font-size: 16px;
+`;
+
+export const CartItemImage = styled.img`
+  width: 30%;
+`;
