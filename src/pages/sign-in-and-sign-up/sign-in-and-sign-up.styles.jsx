@@ -11,7 +11,7 @@ export const SignInAndSignUpContainer = styled.div`
     width: 90%;
     align-items: center;
     > *:first-child {
-      margin-bottom: 50px;
+      margin-bottom: 55px;
     }
   }
 `;
