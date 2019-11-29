@@ -35,9 +35,20 @@ const googleSignInStyles = css`
   }
 `;
 
+const invisibleButtonStyles = css`
+  background: transparent;
+  border: none !important;
+  font-size:0;
+
+`;
+
 const getButtonStyles = props => {
   if (props.isGoogleSignIn) {
     return googleSignInStyles;
+  }
+
+  if (props.isInvisible) {
+    return invisibleButtonStyles;
   }
 
   return props.inverted ? invertedButtonStyles : buttonStyles;

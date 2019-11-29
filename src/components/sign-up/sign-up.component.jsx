@@ -5,7 +5,7 @@ import CustomButton from '../custom-button/custom-button.component';
 
 import { auth, createUserProfileDocument } from '../../firebase/firebase.utils';
 
-import { SignUpContainer, SignUpTitle } from './sign-up.styles';
+import { SignUpContainer, SignUpTitle, SignUpButtonsContainer } from './sign-up.styles';
 
 class SignUp extends React.Component {
   constructor() {
@@ -93,7 +93,11 @@ class SignUp extends React.Component {
             label="Confirm password"
             required
           />
+          <SignUpButtonsContainer>
           <CustomButton type="submit">Sign up</CustomButton>
+          <CustomButton type="submit" isInvisible>Sign up</CustomButton>
+          </SignUpButtonsContainer>
+          
         </form>
       </SignUpContainer>
     );

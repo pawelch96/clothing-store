@@ -67,9 +67,18 @@ export const CollectionFooterContainer = styled.div`
 export const NameContainer = styled.span`
   width: 90%;
   margin-bottom: 15px;
+
+  @media screen and (max-width: 800px) {
+    width: 80%;
+  }
 `;
 
 export const PriceContainer = styled.span`
   width: 10%;
   text-align: right;
+  margin-bottom: 15px;
+
+  @media screen and (max-width: 800px) {
+    width: 20%;
+  }
 `;
