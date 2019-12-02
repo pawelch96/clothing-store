@@ -1,22 +1,7 @@
-import UserActionTypes from "./user.types";
-
-export const setCurrentUser = user => ({
-  type: UserActionTypes.SET_CURRENT_USER,
-  payload: user
-});
+import UserActionTypes from './user.types';
 
 export const googleSignInStart = () => ({
   type: UserActionTypes.GOOGLE_SIGN_IN_START
-});
-
-export const googleSignInSuccess = user => ({
-  type: UserActionTypes.GOOGLE_SIGN_IN_SUCCESS,
-  payload: user
-});
-
-export const googleSignInFailure = error => ({
-  type: UserActionTypes.GOOGLE_SIGN_IN_FAILURE,
-  payload: error.message
 });
 
 export const emailSignInStart = emailAndPassword => ({
@@ -24,12 +9,12 @@ export const emailSignInStart = emailAndPassword => ({
   payload: emailAndPassword
 });
 
-export const emailSignInSuccess = user => ({
-  type: UserActionTypes.EMAIL_SIGN_IN_SUCCESS,
+export const signInSuccess = user => ({
+  type: UserActionTypes.SIGN_IN_SUCCESS,
   payload: user
 });
 
-export const emailSignInFailure = error => ({
-  tpe: UserActionTypes.GOOGLE_SIGN_IN_FAILURE,
+export const signInFailure = error => ({
+  type: UserActionTypes.SIGN_IN_FAILURE,
   payload: error.message
 });
